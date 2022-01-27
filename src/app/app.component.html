@@ -1,0 +1,6 @@
+<ng-container *ngIf="online$ | async; else offline">
+<router-outlet></router-outlet>
+</ng-container>
+<ng-template #offline>
+  <h1>No connection</h1>
+</ng-template>
